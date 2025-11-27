@@ -105,7 +105,11 @@ async function handlePostYouTube(req, res) {
     if (err.message.includes("YouTube API") || err.message.includes("Invalid YouTube")) {
       return res.status(400).json({ error: err.message });
     }
-    return res.status(500).json({ error: "Failed to add video" });
+    // Return the actual error message instead of generic one
+    return res.status(500).json({ 
+      error: err.message || "Failed to add video",
+      details: process.env.NODE_ENV === "development" ? err.stack : undefined
+    });
   }
 }
 
@@ -166,7 +170,10 @@ async function handlePostLocal(req, res) {
     });
   } catch (err) {
     logError("POST /admin/videos/local error", err, getRequestContext(req));
-    return res.status(500).json({ error: "Failed to add video" });
+    return res.status(500).json({ 
+      error: err.message || "Failed to add video",
+      details: process.env.NODE_ENV === "development" ? err.stack : undefined
+    });
   }
 }
 
@@ -220,7 +227,10 @@ async function handlePut(req, res) {
     });
   } catch (err) {
     logError("PUT /admin/videos/:id error", err, getRequestContext(req));
-    return res.status(500).json({ error: "Failed to update video" });
+    return res.status(500).json({ 
+      error: err.message || "Failed to update video",
+      details: process.env.NODE_ENV === "development" ? err.stack : undefined
+    });
   }
 }
 
@@ -259,7 +269,10 @@ async function handleDelete(req, res) {
     });
   } catch (err) {
     logError("DELETE /admin/videos/:id error", err, getRequestContext(req));
-    return res.status(500).json({ error: "Failed to delete video" });
+    return res.status(500).json({ 
+      error: err.message || "Failed to delete video",
+      details: process.env.NODE_ENV === "development" ? err.stack : undefined
+    });
   }
 }
 

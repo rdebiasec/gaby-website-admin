@@ -46,8 +46,27 @@ async function readVideosJson() {
   } catch (error) {
     if (error.status === 404) {
       // File doesn't exist, return empty array
+      console.log(JSON.stringify({
+        level: "info",
+        message: "videos.json not found, returning empty array",
+        timestamp: new Date().toISOString(),
+        path: config.path,
+      }));
       return { videos: [], sha: null };
     }
+    
+    // Log read errors
+    console.error(JSON.stringify({
+      level: "error",
+      message: "Failed to read videos.json from GitHub",
+      timestamp: new Date().toISOString(),
+      error: {
+        message: error.message,
+        status: error.status,
+        responseData: error.response?.data,
+      },
+    }));
+    
     throw error;
   }
 }
@@ -79,10 +98,66 @@ async function writeVideosJson(videos, sha, message) {
       params.sha = sha;
     }
 
+    // Log the attempt (without sensitive data)
+    console.log(JSON.stringify({
+      level: "info",
+      message: "Attempting to write videos.json to GitHub",
+      timestamp: new Date().toISOString(),
+      videoCount: videos.length,
+      hasSha: !!sha,
+      commitMessage: message,
+      path: config.path,
+      repo: `${config.owner}/${config.repo}`,
+    }));
+
     const response = await octokit.repos.createOrUpdateFileContents(params);
+    
+    // Log success
+    console.log(JSON.stringify({
+      level: "info",
+      message: "Successfully wrote videos.json to GitHub",
+      timestamp: new Date().toISOString(),
+      commitSha: response.data.commit?.sha,
+      contentSha: response.data.content?.sha,
+    }));
+
     return response.data;
   } catch (error) {
-    throw new Error(`Failed to write videos.json: ${error.message}`);
+    // Extract detailed error information
+    const errorDetails = {
+      message: error.message,
+      status: error.status,
+      name: error.name,
+    };
+
+    // Try to get response data if available
+    if (error.response) {
+      errorDetails.responseStatus = error.response.status;
+      errorDetails.responseData = error.response.data;
+      errorDetails.responseHeaders = error.response.headers;
+    }
+
+    // Try to get request info if available
+    if (error.request) {
+      errorDetails.requestUrl = error.request.url;
+      errorDetails.requestMethod = error.request.method;
+    }
+
+    // Log full error details
+    console.error(JSON.stringify({
+      level: "error",
+      message: "Failed to write videos.json to GitHub",
+      timestamp: new Date().toISOString(),
+      error: errorDetails,
+      stack: error.stack,
+    }));
+
+    // Throw error with more context
+    const errorMessage = errorDetails.responseData?.message 
+      ? `GitHub API error: ${errorDetails.responseData.message}`
+      : `Failed to write videos.json: ${error.message}`;
+    
+    throw new Error(errorMessage);
   }
 }
 

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/admin/login",
+      "dest": "/api/admin/login.js"
+    },
+    {
+      "src": "/api/admin/videos",
+      "dest": "/api/admin/videos.js"
+    },
+    {
+      "src": "/api/admin/videos/(.*)",
+      "dest": "/api/admin/videos.js"
+    }
+  ]
+}
+

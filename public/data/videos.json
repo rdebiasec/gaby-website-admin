@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "The Perfect Cursor AI Workflow (3 Simple Steps)",
+    "description": "🔍 Find hidden issues in your code → https://vibescan.io\n💡 Full AI Coding Course → https://bit.ly/ai-coding-volo 🧑‍💻\n\nIn this Cursor AI tutorial I will show you a simple but powerful workflow to code faster with AI. We will build a full stack app with AI and use context engineering to plan features and do an automated AI code review. All prompts and resources shared below!\n\n🚀 VibeScan launches on Product Hunt - August 9th!\nWant a reminder? Visit https://launch.vibescan.io\n\n📚 Resources:\n- The 3 Command prompts: https://github.com/VoloBuilds/prompts/tree/main/commands\n- create-volo-app Starter Kit: https://github.com/VoloBuilds/create-volo-app\n- Cursor: https://www.cursor.com/\n- AI Coding For Entrepreneurs Course: https://bit.ly/ai-coding-volo\n- VibeScan: https://vibescan.io\n- VibeScan demo scan: https://vibescan.io/share/73ca183c-d18b-4ecc-b1f8-bda2d789bb17\n\n🚀 In This Video, You'll learn:\n- Best way to use Cursor\n- How to use Cursor AI\n- How to use Cursor Agents\n- Coding with Cursor and Sonnet 4\n- Best way to code with AI in 2025\n- How to code with Cursor AI\n- What is context engineering\n- How to secure AI code\n- How to find issues in AI code\n- Cursor coding tips\n- Best way to use Cursor to code\n- Coding in 2025\n- Web Development 2025\n\n💡 Perfect for Viewers Interested in:\n- Best AI coding tools\n- Software Development 2025\n- Future of coding\n- Learning to code in 2025\n- Using AI to code\n- Coding with AI\n- Cursor AI for beginners\n- Cursor AI tutorial\n\n🔴 Subscribe for more tutorials on AI and programming!\n\nChapters:\n00:00 - Intro & VibeScan Launch\n00:51 - Command Prompts\n01:27 - New Project Workflow\n02:54 - Feature Dev Workflow\n06:30 - New Project Cursor Tutorial\n08:31 - Feature Dev Cursor Tutorial\n11:49 - AI Code Review & Fixes\n15:10 - Result & Fixing Hidden Issues",
+    "thumbnail": "https://i.ytimg.com/vi/Jem2yqhXFaU/maxresdefault.jpg",
+    "videoUrl": "https://www.youtube.com/watch?v=Jem2yqhXFaU",
+    "youtubeId": "Jem2yqhXFaU",
+    "date": "2025",
+    "category": "Celebration",
+    "year": 2025
+  },
+  {
+    "id": 2,
+    "title": "Gabriella 2011 Balcon",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/OaH0HZ7gB5M/maxresdefault.jpg",
+    "videoUrl": "https://youtu.be/OaH0HZ7gB5M",
+    "youtubeId": "OaH0HZ7gB5M",
+    "date": "2011",
+    "category": "Family",
+    "year": 2024
+  },
+  {
+    "id": 3,
+    "title": "Orlando Vacation 2012",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/1ed7fydBGuM/hqdefault.jpg",
+    "videoUrl": "https://youtu.be/1ed7fydBGuM",
+    "youtubeId": "1ed7fydBGuM",
+    "date": "2012",
+    "category": "Family",
+    "year": 2023
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2025-11-29T04:29:27.583Z",
+  "source": {
+    "url": "https://gabriella-jose.com/",
+    "siteName": "Gabriella Jose"
+  },
+  "config": {
+    "maxPages": 12,
+    "maxFaqs": 80,
+    "minSectionChars": 180
+  },
+  "metrics": {
+    "pagesCrawled": 6,
+    "sectionsExtracted": 6,
+    "totalFaqs": 7,
+    "avgAnswerWords": 59.9,
+    "estimatedAnswerTokens": 545,
+    "coverageScore": 1.17
+  },
+  "faqs": [
+    {
+      "question": "What does the “In Memory of Gabriella” page cover on Gabriella Jose?",
+      "answer": "Una vida hermosa recordada Esta es una colección de recuerdos, momentos y hitos del tiempo de Gabriella con nosotros. Cada foto, video y documento vibra con su risa, la curiosidad que la llevaba a nuevas aventuras y la alegría que compartía con todos. Fue una niña maravillosamente feliz, amada y extrañada profundamente por quienes la quieren, y este espacio celebra ese espíritu radiante con gratitud y sonrisas. 20Fotos8Videos3MensajesMuro1Libro",
+      "sourceUrl": "https://gabriella-jose.com/",
+      "tags": [
+        "page-overview"
+      ]
+    },
+    {
+      "question": "What does “Gabriella” highlight on Gabriella Jose?",
+      "answer": "Una vida hermosa recordada Esta es una colección de recuerdos, momentos y hitos del tiempo de Gabriella con nosotros. Cada foto, video y documento vibra con su risa, la curiosidad que la llevaba a nuevas aventuras y la alegría que compartía con todos. Fue una niña maravillosamente feliz, amada y extrañada profundamente por quienes la quieren, y este espacio celebra ese espíritu radiante con gratitud y sonrisas. 20Fotos8Videos3MensajesMuro1Libro",
+      "sourceUrl": "https://gabriella-jose.com/",
+      "tags": [
+        "section",
+        "gabriella"
+      ]
+    },
+    {
+      "question": "What does “Cronología” highlight on Gabriella Jose?",
+      "answer": "Un viaje cronológico a través de los recuerdos TodasFamiliaCelebraciónAventuraAmigosNaturalezaMomentos tranquilosRetratoMúsica 2025🎥The Perfect Cursor AI Workflow (3 Simple Steps)jun 2025🔍 Find hidden issues in your code → https://vibescan.io 💡 Full AI Coding Course → https://bit.ly/ai-coding-volo 👨‍💻 In this Cursor AI tutorial I will show you a simple but powerful workflow to code faster with AI. We will build a full stack app with AI and use context engineering to plan features and do an automated AI code review. All prompts and resources shared below! 🚀 VibeScan launches on Product Hunt - August 9th! Want a reminder? Visit https://launch.vibescan.io 📚 Resources: - The 3 Command prompts: https://github.com/VoloBuilds/prompts/tree/main/commands - create-volo-app Starter Kit: https://github.com/VoloBuilds/create-volo-app - Cursor: https://www.cursor.com/ - AI Coding For Entrepreneurs Course: https://bit.ly/ai-coding-volo - VibeScan: https://vibescan.io - VibeScan demo scan: https://vibescan. …",
+      "sourceUrl": "https://gabriella-jose.com/?__spaView=timeline",
+      "tags": [
+        "section",
+        "cronolog-a"
+      ]
+    },
+    {
+      "question": "What does “Galería de fotos” highlight on Gabriella Jose?",
+      "answer": "Una colección de momentos hermosos capturados en el tiempo TodasFamiliaCelebraciónAventuraAmigosNaturalezaMomentos tranquilosRetratoMúsica▶ Presentación Un día especial2020FamiliaTiempo en familia2020FamiliaCelebración2019CelebraciónTiempos felices2019FamiliaEvento memorable2018CelebraciónJuntos2018FamiliaAmor2017FamiliaAventuras2017AventuraRayos de sol2016AventuraPara siempre2016FamiliaRisas en el parque2015AmigosPaseo al atardecer dorado2015AventuraCampo de flores silvestres2014NaturalezaCelebración de verano2014CelebraciónTarde acogedora2013Momentos tranquilosAlegría de cumpleaños2013CelebraciónBrisa costera2012AventuraAlegría pura2012RetratoAventura en el sendero2011NaturalezaCanciones al anochecer2011Música",
+      "sourceUrl": "https://gabriella-jose.com/?__spaView=photos",
+      "tags": [
+        "section",
+        "galer-a-de-fotos"
+      ]
+    },
+    {
+      "question": "What does “Galería de videos” highlight on Gabriella Jose?",
+      "answer": "Videos que capturan momentos especiales y recuerdos TodasFamiliaCelebración Recuerdos hermosos2020FamiliaMomentos en familia2021CelebraciónCelebraciones2019FamiliaThe Perfect Cursor AI Workflow (3 Simple Steps)2025CelebraciónGabriella 2011 Balcon2011FamiliaOrlando Vacation 20122012FamiliaNavidad en Bogota 20102010FamiliaJaime Duque 20112011Familia",
+      "sourceUrl": "https://gabriella-jose.com/?__spaView=videos",
+      "tags": [
+        "section",
+        "galer-a-de-videos"
+      ]
+    },
+    {
+      "question": "What does “Mensajes de amor desde todo el mundo” highlight on Gabriella Jose?",
+      "answer": "Comparte una nota que celebre el espíritu alegre de Gabriella. Los mensajes se guardan de forma segura en nuestra base de datos y puedes descargarlos como un archivo JSON para conservarlos.",
+      "sourceUrl": "https://gabriella-jose.com/?__spaView=wall",
+      "tags": [
+        "section",
+        "mensajes-de-amor-desde-todo-el-mundo"
+      ]
+    },
+    {
+      "question": "What does “Una carta de amor en proceso” highlight on Gabriella Jose?",
+      "answer": "La mamá de Gabriella, Jimena Cortes, está terminando con cuidado un libro que reúne los momentos radiantes, las lecciones silenciosas y las historias alegres que definieron la vida de Gaby. El manuscrito se está finalizando ahora y se publicará el 23 de febrero, el día en que Gaby ganó sus alas.",
+      "sourceUrl": "https://gabriella-jose.com/?__spaView=book",
+      "tags": [
+        "section",
+        "una-carta-de-amor-en-proceso"
+      ]
+    }
+  ],
+  "crawlReport": [
+    {
+      "url": "https://gabriella-jose.com/",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    },
+    {
+      "url": "https://gabriella-jose.com/?__spaView=timeline",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    },
+    {
+      "url": "https://gabriella-jose.com/?__spaView=photos",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    },
+    {
+      "url": "https://gabriella-jose.com/?__spaView=videos",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    },
+    {
+      "url": "https://gabriella-jose.com/?__spaView=wall",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    },
+    {
+      "url": "https://gabriella-jose.com/?__spaView=book",
+      "title": "In Memory of Gabriella",
+      "sections": 1,
+      "hasSummary": true
+    }
+  ]
+}

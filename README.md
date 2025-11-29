@@ -504,6 +504,30 @@ async function test() {
 test();
 ```
 
+## RAG FAQ Scraper
+
+The repository now includes `scripts/ragFaqScraper.js`, a configurable pipeline that crawls the public site and turns each page (or SPA view) into Retrieval-Augmented Generation (RAG) friendly FAQ rows.
+
+```bash
+node scripts/ragFaqScraper.js \
+  --url https://gabriella-jose.com \
+  --siteName "Gabriella Jose" \
+  --seedPaths "/" \
+  --spaViews "timeline=Cronología,photos=Fotos,videos=Videos,wall=Muro,book=Libro" \
+  --maxPages 12 \
+  --output data/gabriella_faq.json
+```
+
+Key flags:
+
+- `--url`: starting URL to crawl (required)
+- `--seedPaths`: comma-separated list of additional server paths to enqueue
+- `--spaViews`: `id=Label` pairs that tell the scraper how to click SPA navigation buttons (enables client-rendered pages like Timeline or Photos)
+- `--maxPages`, `--maxFaqs`, `--minSectionChars`: knobs for controlling crawl size and FAQ density
+- `--renderWithBrowser=false`: disable Puppeteer rendering if you only need static HTML
+
+The latest dataset for `gabriella-jose.com` lives at `data/gabriella_faq.json` and includes crawl metrics plus the normalized FAQ array that can be fed directly into a RAG index.
+
 ## License
 
 ISC
